@@ -1,0 +1,319 @@
+{
+    "dishes": [
+        {
+            "id": 1,
+            "name": "Spaghetti Carbonara",
+            "price": 12.99,
+            "description": "Classic Italian pasta made with fresh spaghetti, crispy pancetta, eggs, and Parmesan cheese.",
+            "rating": 4.5,
+            "image": "https://images.immediate.co.uk/production/volatile/sites/30/2020/08/recipe-image-legacy-id-1001491_11-2e0fa5c.jpg?quality=90&resize=440,400"
+
+        },
+        {
+            "id": 2,
+            "name": "Margherita Pizza",
+            "price": 10.49,
+            "description": "A traditional Neapolitan pizza topped with fresh mozzarella, ripe tomatoes, fresh basil.",
+            "rating": 4.2,
+            "image":"https://cdn.shopify.com/s/files/1/0274/9503/9079/files/20220211142754-margherita-9920_5a73220e-4a1a-4d33-b38f-26e98e3cd986.jpg?v=1723650067"
+        },
+        {
+            "id": 3,
+            "name": "Lasagna",
+            "price": 14.99,
+            "description": "Layers of pasta, meat, and béchamel sauce baked to perfection.",
+            "rating": 4.8,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdvTxeDfrVXcv9SwPx3gtLqam3MbgXjHsTng&s"
+        },
+        {
+            "id": 4,
+            "name": "Fettuccine Alfredo",
+            "price": 13.99,
+            "description": "Fettuccine pasta tossed in a rich and creamy Alfredo sauce.",
+            "rating": 4.6,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaXBZGoLV9ZldmRRX-qDRnNX4EelhCDPgZTA&s"
+        },
+        {
+            "id": 5,
+            "name": "Pesto Pasta",
+            "price": 11.99,
+            "description": "Pasta mixed with fresh basil pesto and topped with Parmesan.",
+            "rating": 4.4,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdoVRw4NTNPvc8LuV_x5UU28oQiGYHiaG9Pg&s"
+        },
+        {
+            "id": 6,
+            "name": "Tiramisu",
+            "price": 5.99,
+            "description": "A classic Italian dessert made with coffee-soaked ladyfingers and mascarpone cheese.",
+            "rating": 4.7,
+            "image":"https://www.culinaryhill.com/wp-content/uploads/2021/01/Tiramisu-Culinary-Hill-1200x800-1.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Risotto",
+            "price": 15.49,
+            "description": "Creamy rice dish cooked with broth and flavored with saffron and Parmesan.",
+            "rating": 4.5,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUDIMDyHdJtnQxYh0597_8OjkmpBt9ouEKug&s"
+        },
+        {
+            "id": 8,
+            "name": "Bruschetta",
+            "price": 6.99,
+            "description": "Grilled bread topped with a mixture of diced tomatoes, garlic, and basil.",
+            "rating": 4.3,
+            "image":"https://www.allrecipes.com/thmb/QSsjryxShEx1L6o0HLer1Nn4jwA=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/54165-balsamic-bruschetta-DDMFS-4x3-e2b55b5ca39b4c1783e524a2461634ea.jpg"
+        },
+        {
+            "id": 9,
+            "name": "Chicken Parmesan",
+            "price": 16.99,
+            "description": "Breaded chicken breast topped with marinara sauce and mozzarella cheese.",
+            "rating": 4.6,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LJ46_x_AGZcYG8ICgnZPEBfkRmfrjCAcZg&s"
+        },
+        {
+            "id": 10,
+            "name": "Eggplant Parmesan",
+            "price": 15.99,
+            "description": "Layers of breaded eggplant with marinara sauce and mozzarella cheese.",
+            "rating": 4.4,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEB8jJT--wde3ryJBaS20YNwo_uybLTZREtg&s"
+        },
+        {
+            "id": 11,
+            "name": "Caprese Salad",
+            "price": 8.49,
+            "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+            "rating": 4.5,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 12,
+            "name": "Pasta Primavera",
+            "price": 13.49,
+            "description": "Pasta tossed with fresh seasonal vegetables and olive oil.",
+            "rating": 4.3,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 13,
+            "name": "Minestrone Soup",
+            "price": 7.99,
+            "description": "A hearty Italian soup filled with vegetables, beans, and pasta.",
+            "rating": 4.2,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 14,
+            "name": "Gnocchi",
+            "price": 12.49,
+            "description": "Soft potato dumplings served with a choice of sauce.",
+            "rating": 4.5,
+            "image":"https://cdn.britannica.com/92/234892-050-BCED32E4/gnocchi-pasta-red-tomato-sauce-parmesan-cheese.jpg"
+        },
+        {
+            "id": 15,
+            "name": "Panna Cotta",
+            "price": 6.49,
+            "description": "A creamy Italian dessert topped with a berry sauce.",
+            "rating": 4.6,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwM7p7T6_7uluKDjQk-LLviq4irPb_uvpTAA&s"
+        },
+        {
+            "id": 16,
+            "name": "Seafood Linguine",
+            "price": 19.99,
+            "description": "Linguine pasta served with a mix of fresh seafood and tomato sauce.",
+            "rating": 4.7,
+            "image":"https://images.immediate.co.uk/production/volatile/sites/2/2023/03/Seafood-linguine-b70ceb5.jpg?resize=768,574"
+        },
+        {
+            "id": 17,
+            "name": "Stuffed Bell Peppers",
+            "price": 14.99,
+            "description": "Bell peppers filled with a mixture of rice, ground meat, and spices.",
+            "rating": 4.4,
+            "image":"https://www.budgetbytes.com/wp-content/uploads/2023/08/Stuffed-Bell-Peppers-close.jpg"
+        },
+        {
+            "id": 18,
+            "name": "Vegetable Stir-Fry",
+            "price": 11.99,
+            "description": "Assorted vegetables stir-fried with soy sauce and garlic.",
+            "rating": 4.2,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDaVcll19kN9w5p2AKqn33CtJYOzzUQiWb0A&s"
+        },
+        {
+            "id": 19,
+            "name": "Shrimp Scampi",
+            "price": 18.99,
+            "description": "Shrimp sautéed in garlic butter and served over pasta.",
+            "rating": 4.8,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNi3PwYXZbQ2pHNooG4TpPVpYgVVmszf1Q7g&s"
+        },
+        {
+            "id": 20,
+            "name": "Chocolate Fondant",
+            "price": 7.99,
+            "description": "A rich chocolate dessert with a gooey center, served with vanilla ice cream.",
+            "rating": 4.9,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LJ46_x_AGZcYG8ICgnZPEBfkRmfrjCAcZg&s"
+        }
+    ],
+    
+    "special-dishes": [
+        {
+            "id": 21,
+            "name": "Caprese Salad",
+            "price": 8.49,
+            "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+            "rating": 4.5,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 22,
+            "name": "Pasta Primavera",
+            "price": 13.49,
+            "description": "Pasta tossed with fresh seasonal vegetables and olive oil.",
+            "rating": 4.3,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 23,
+            "name": "Minestrone Soup",
+            "price": 7.99,
+            "description": "A hearty Italian soup filled with vegetables, beans, and pasta.",
+            "rating": 4.2,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 24,
+            "name": "Gnocchi",
+            "price": 12.49,
+            "description": "Soft potato dumplings served with a choice of sauce.",
+            "rating": 4.5,
+            "image":"https://cdn.britannica.com/92/234892-050-BCED32E4/gnocchi-pasta-red-tomato-sauce-parmesan-cheese.jpg"
+        },
+        {
+            "id": 25,
+            "name": "Panna Cotta",
+            "price": 6.49,
+            "description": "A creamy Italian dessert topped with a berry sauce.",
+            "rating": 4.6,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwM7p7T6_7uluKDjQk-LLviq4irPb_uvpTAA&s"
+        },
+        {
+            "id": 26,
+            "name": "Seafood Linguine",
+            "price": 19.99,
+            "description": "Linguine pasta served with a mix of fresh seafood and tomato sauce.",
+            "rating": 4.7,
+            "image":"https://images.immediate.co.uk/production/volatile/sites/2/2023/03/Seafood-linguine-b70ceb5.jpg?resize=768,574"
+        },
+        {
+            "id": 27,
+            "name": "Stuffed Bell Peppers",
+            "price": 14.99,
+            "description": "Bell peppers filled with a mixture of rice, ground meat, and spices.",
+            "rating": 4.4,
+            "image":"https://www.budgetbytes.com/wp-content/uploads/2023/08/Stuffed-Bell-Peppers-close.jpg"
+        },
+        {
+            "id": 28,
+            "name": "Vegetable Stir-Fry",
+            "price": 11.99,
+            "description": "Assorted vegetables stir-fried with soy sauce and garlic.",
+            "rating": 4.2,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDaVcll19kN9w5p2AKqn33CtJYOzzUQiWb0A&s"
+        },
+        {
+            "id": 29,
+            "name": "Shrimp Scampi",
+            "price": 18.99,
+            "description": "Shrimp sautéed in garlic butter and served over pasta.",
+            "rating": 4.8,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNi3PwYXZbQ2pHNooG4TpPVpYgVVmszf1Q7g&s"
+        },
+        {
+            "id": 30,
+            "name": "Chocolate Fondant",
+            "price": 7.99,
+            "description": "A rich chocolate dessert with a gooey center, served with vanilla ice cream.",
+            "rating": 4.9,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LJ46_x_AGZcYG8ICgnZPEBfkRmfrjCAcZg&s"
+        }
+    ],
+    "special-offers":[
+        {
+            "id": 37,
+            "name": "Shrimp Scampi",
+            "price": 18.99,
+            "description": "Shrimp sautéed in garlic butter and served over pasta.",
+            "rating": 4.8,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNi3PwYXZbQ2pHNooG4TpPVpYgVVmszf1Q7g&s"
+        },
+        {
+            "id": 38,
+            "name": "Chocolate Fondant",
+            "price": 7.99,
+            "description": "A rich chocolate dessert with a gooey center, served with vanilla ice cream.",
+            "rating": 4.9,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9LJ46_x_AGZcYG8ICgnZPEBfkRmfrjCAcZg&s"
+        },
+        {
+
+            "id": 39,
+            "name": "Eggplant Parmesan",
+            "price": 15.99,
+            "description": "Layers of breaded eggplant with marinara sauce and mozzarella cheese.",
+            "rating": 4.4,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEB8jJT--wde3ryJBaS20YNwo_uybLTZREtg&s"
+        },
+        {
+            "id": 40,
+            "name": "Caprese Salad",
+            "price": 8.49,
+            "description": "Fresh mozzarella, tomatoes, and basil drizzled with balsamic glaze.",
+            "rating": 4.5,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        }
+    ],
+ "up-coming-events":[
+        {
+            "id": 52,
+            "name": "Pasta Primavera",
+            "price": 13.49,
+            "description": "Pasta tossed with fresh seasonal vegetables and olive oil.",
+            "rating": 4.3,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 53,
+            "name": "Minestrone Soup",
+            "price": 7.99,
+            "description": "A hearty Italian soup filled with vegetables, beans, and pasta.",
+            "rating": 4.2,
+            "image":"https://thecozycook.com/wp-content/uploads/2024/02/Pasta-Primavera-f.jpg"
+        },
+        {
+            "id": 54,
+            "name": "Gnocchi",
+            "price": 12.49,
+            "description": "Soft potato dumplings served with a choice of sauce.",
+            "rating": 4.5,
+            "image":"https://cdn.britannica.com/92/234892-050-BCED32E4/gnocchi-pasta-red-tomato-sauce-parmesan-cheese.jpg"
+        },
+        {
+            "id": 55,
+            "name": "Panna Cotta",
+            "price": 6.49,
+            "description": "A creamy Italian dessert topped with a berry sauce.",
+            "rating": 4.6,
+            "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwM7p7T6_7uluKDjQk-LLviq4irPb_uvpTAA&s"
+        }
+
+    ]
+    }
+

@@ -1,0 +1,44 @@
+.order{
+    display: flex-end;
+    flex-direction: row;
+    width: 30%;
+    height: 100vh;
+    margin-left: 70%;
+    box-shadow: 0px 0px 3px 1px #656665;
+   justify-content: space-between;
+   align-items: center;
+    
+
+}
+.order .header{
+  background-color: var(--mainColor);
+  text-align: center;
+   padding: 10px;
+   color: white;
+   
+
+}
+.order-container h2{
+    padding: 10px 10px;
+
+}
+.order-form{
+    display: flex;
+    flex-direction: column;
+   
+}
+.order-form input{
+    margin: 10px;
+    padding: 10px;
+}
+
+.order-bottom-section{
+    margin-top: 50%;
+}
+.order-bottom-section div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+
+}
