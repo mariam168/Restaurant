@@ -10,31 +10,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.css"
 </head>
 <body> 
-<header>
-  <div class="header-container">
-  <div class="logo">
-    
-      <img src="images/logo.png"/>
-      
-  </div>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Menus</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-  </div>
-  <div class="log">
-      <div class="chart-icon">
-        <i class="material-icons">shopping_cart</i>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="images/logo.png" alt="Logo"/>     
       </div>
-      <span>2</span>
-      <button>log in</button>
-  </div>
-  </div>
-</header>
+      <div class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Menus</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="log">
+        <div class="chart-icon">
+          <i class="material-icons">shopping_cart</i>
+        </div>
+        <span>2</span>
+        <button>log in</button>
+      </div>
+    </div>
+  </header> 
 <main>
   <section class="welcome-container">
     <div class="container">
@@ -44,7 +43,7 @@
             <h3>Food + Drinks</h3>
             <div class="go-to-menu-btn">
                 <button id="go-to-btn">Go to Menu</button>
-                <span><i class="fas fa-play"></i></span>
+                <a href="products.html"><span><i class="fas fa-play" ></i></span></a>
             </div>
         </div>
     </div>
@@ -98,83 +97,75 @@
     </section>
     <section class="events">
       <h1>Up coming Events</h1>
-      <div class="events-container">
-        <div class="event-item">
-          <img src="images/dish1.png"></img>
-
-          <div class="event-information">
-            
-            <p>Japanese noodle soup with 
-              broth, meat, and veggies
-              Japanese noodle soup with 
-              broth, meat, and veggies</p>
-              <span>Read More -></span>
-          </div>
-
+      <div class="container mt-5">
+        <div class="row">
+          
+            <div class="col-3 ">
+                <div class="event-item card">
+                    <img src="images/dish1.png" class="card-img-top" alt="Dish Image">
+                    <div class="card-body">
+                        <p class="card-text">Japanese noodle soup with broth, meat, and veggies</p>
+                        <span >Read More -></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-3 ">
+                <div class="event-item card">
+                    <img src="images/dish1.png" class="card-img-top" alt="Dish Image">
+                    <div class="card-body">
+                        <p class="card-text">Japanese noodle soup with broth, meat, and veggies</p>
+                        <span >Read More -></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-3">
+                <div class="event-item card">
+                    <img src="images/dish1.png" class="card-img-top" alt="Dish Image">
+                    <div class="card-body " >
+                        <p class="card-text ">Japanese noodle soup with broth, meat, and veggies</p>
+                        <span >Read More -></span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="col-3">
+                <div class="event-item card">
+                    <img src="images/dish1.png" class="card-img-top" alt="Dish Image">
+                    <div class="card-body">
+                        <p class="card-text">Japanese noodle soup with broth, meat, and veggies</p>
+                        <span >Read More -></span>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="event-item">
-          <img src="images/dish1.png"></img>
-
-          <div class="event-information">
-            
-            <p>Japanese noodle soup with 
-              broth, meat, and veggies
-              Japanese noodle soup with 
-              broth, meat, and veggies</p>
-              <span>Read More -></span>
-          </div>
-
-        </div>
-        <div class="event-item">
-          <img src="images/dish1.png"></img>
-
-          <div class="event-information">
-            
-            <p>Japanese noodle soup with 
-              broth, meat, and veggies
-              Japanese noodle soup with 
-              broth, meat, and veggies</p>
-              <span>Read More -></span>
-          </div>
-
-        </div>
-        <div class="event-item">
-          <img src="images/dish1.png"></img>
-
-          <div class="event-information">
-            
-            <p>Japanese noodle soup with 
-              broth, meat, and veggies
-              Japanese noodle soup with 
-              broth, meat, and veggies</p>
-              <span>Read More -></span>
-          </div>
-
-        </div> 
-        </div>
+    </div>
+    
+        
     </section>
     <section class="Restaurant overview">
       <h1>Our Overview</h1>
       <div class="overview-container">
       <div>
-        <h3>200</h3>
-        <h4>Happy Customers</h4>
+        <h5>200</h5>
+        <h6>Happy Customers</h6>
       </div>
       <div>
-        <h3>200</h3>
-        <h4>Happy Customers</h4>
+        <h5>200</h5>
+        <h6>Happy Customers</h6>
       </div>
       <div>
-        <h3>200</h3>
-        <h4>Happy Customers</h4>
+        <h5>200</h5>
+        <h6>Happy Customers</h6>
       </div>
       <div>
-        <h3>200</h3>
-        <h4>Happy Customers</h4>
+        <h5>200</h5>
+        <h6>Happy Customers</h6>
       </div>
       <div>
-        <h3>200</h3>
-        <h4>Happy Customers</h4>
+        <h5>200</h5>
+        <h6>Happy Customers</h6>
       </div>
       </div>
     </section>
@@ -183,7 +174,11 @@
   <footer>
     
   </footer>
+  <script src="js/popper.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="app.js" ></script>
+  <script src="header.js"></script>
 </body>
 
 <html>

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,258 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css"/>
-  <link rel="stylesheet" href="responsive.css"/>
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="responsive.css"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="product.css">
+    <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
-
     <header>
-  <div class="header-container">
-  <div class="logo">
+        <div class="header-container">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo"/>
+            </div>
+            <nav class="nav-links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menus</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+            </nav>
+            <div class="log">
+                <div class="chart-icon">
+                    <i class="material-icons">shopping_cart</i>
+                </div>
+                <span>2</span>
+                <button>Log in</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+         <section>
+            <form>
+                <div class="form-container">
+                    <input type="search" placeholder="Search" required>
+                    <div class="form-options">
+                        <input type="text" placeholder="Option 1" required>
+                        <input type="text" placeholder="Option 2" required>
+                        <input type="text" placeholder="Option 3" required>
+                    </div>
+                </div>
+                <button type="submit">Search</button>
+            </form>
+           
+            <div class="row row-cols-12 mt-4" id="all-products-items" style="margin-bottom: 50px;">
+                 
+            </div>
+
+            <div class="offcanvas offcanvas-end fixed-top " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" 
     
-      <img src="images/logo.png"/>
-      
-  </div>
-  <div class="nav-links">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Menus</a>
-    <a href="#">Blog</a>
-    <a href="#">Contact</a>
-  </div>
-  <div class="log">
-       <div class="chart-icon">
-        <i class="material-icons">shopping_cart</i>
-        
-      </div>
-      <span>2</span>
-       <button>log in</button>
-  </div>
-  </div>
-</header>
-<main>
-    <section>
-        <form>
-            <div class="form-container">
-                <input type="search" placeholder="Search">
-                <div class="form-options">
-
-                   <input type="text" placeholder="Search">
-                    <input type="text" placeholder="Search">
-                    <input type="text" placeholder="Search">
+            style="display: none;margin-top: 100px;">
+                <div class="offcanvas-header row p-2">
+                    <h2 class="offcanvas-title text-white col-10" id="offcanvasRightLabel">Your Order</h2>
+                    <button type="button" class="btn-close w-5 h-2 col-2 text-white" data-bs-dismiss="offcanvas" aria-label="Close">Close</button>
+                </div>
+                <div class="offcanvas-body p-3 n" id="offcanvasContent">
+                    <form class="row g-3">
+                        <div class="mb-4 col-12">
+                            <label for="inputName" class="form-label">Address *</label>
+                            <input type="text" class="form-control" placeholder="Enter your Name" required>
+                            <input type="tel" class="form-control" placeholder="Enter your contact number" required>
+                            <input type="text" class="form-control" placeholder="Enter your address" required>
+                        </div>
+                        <div class="col-12 text-center">
+                            <small>(The order will arrive in 30 minutes)</small>
+                        </div>
+                        <hr>
+                        <hr>
+                    </form>
+                    <div id="form-end">
+                       
+                        <button id="nextBtn" class="btn ">Next</button>
+                    </div>
                 </div>
             </div>
-            <button>Search</button>
-        </form>
-    <section class="all-products">
+        </section> 
+       
+    </main>
 
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <a href="#"="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </a>
-            </div>
-        </div>
-         
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-         
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-
-
-
-        <div class="products-container">
-            <div class="product-image">
-            <img src="images/dish1.png" alt="" >
-            </div>
-            <div class="product-info">
-                <div>
-                    <h3>Pasta</h3>
-                    <img src="images/five-stars.png" alt="" class="product-rating">
-                    <p>15$</p>
-                </div>
-                <div class="product-chart">
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-            </div>
-        </div>
-
-
-    </section>
-</main>
+    <script src="js/popper.min.js"></script>
+    <script src="js/jquery-3.7.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="products.js"></script>
 </body>
 </html>

@@ -47,7 +47,7 @@ fetch(url)
             <img src="${dish.image }" alt="dish image">
           </div>
           <div class="top-picks-information">
-            <h4 title="${dish.name}">${dish.name.length > 15 ? dish.name.substring(0, 15) + '...' : dish.name}</h4>
+            <h5 title="${dish.name}">${dish.name.length > 15 ? dish.name.substring(0, 15) + '...' : dish.name}</h5>
             <img src="images/five-stars.png" class="five-stars" alt="Rating">
             <div class="top-picks-chart">
               <p>${dish.price}$</p>
@@ -70,6 +70,7 @@ document.getElementById('prev').addEventListener('click', () => {
     displayDishes(); 
   }
 });
+
 
 document.getElementById('next').addEventListener('click', () => {
   if (currentIndex + 1 < dishes.length) { 
@@ -116,7 +117,7 @@ function displaySpecialDishes(specialDishes) {
           <img src="${dish1.image}" alt="dish image">
         </div>
         <div class="special-dish-information">
-          <h4 title="${dish1.name}">${dish1.name.length > 15 ? dish1.name.substring(0, 15) + '...' : dish1.name}</h4>
+          <h5 title="${dish1.name}">${dish1.name.length > 15 ? dish1.name.substring(0, 15) + '...' : dish1.name}</h5>
           <img src="images/five-stars.png" class="five-stars" alt="Rating">
          
           <div class="special-dish-chart">
@@ -168,11 +169,11 @@ fetch(url3)
   });
 
 function displaySpecialOffers(specialOffers) {
-  const itemsContainer3 = document.getElementsByClassName('special-offers-items')[0]; // Select first container
-  itemsContainer3.innerHTML = ''; // Clear previous content
+  const itemsContainer3 = document.getElementsByClassName('special-offers-items')[0]; 
+  itemsContainer3.innerHTML = ''; 
 
   if (specialOffers.length > 0) {
-    const nextOffers = specialOffers.slice(currentIndex3, currentIndex3 + 4); // Show 4 offers at a time
+    const nextOffers = specialOffers.slice(currentIndex3, currentIndex3 + 4); 
     console.log('Next offers to display:', nextOffers);
 
     nextOffers.forEach(offer => {
@@ -182,11 +183,11 @@ function displaySpecialOffers(specialOffers) {
       itemDiv3.innerHTML = `
         <img src="${offer.image}" alt="special offer image">
         <div class="special-offer-information">
-          <h3 title="${offer.name}">${offer.name.length > 15 ? offer.name.substring(0, 15) + '...' : offer.name}</h3>
+          <h5 title="${offer.name}">${offer.name.length > 15 ? offer.name.substring(0, 15) + '...' : offer.name}</h5>
           <p>${offer.description}</p>
         </div>
         <div class="offer-price">
-          <h4>${offer.price}$</h4>
+          <h6>${offer.price}$</h6>
         </div>
       `;
 
