@@ -11,56 +11,60 @@ export default function CartPage() {
 
   if (cart.length === 0) {
     return (
-      <div className="min-h-screen px-6 py-20 flex flex-col items-center justify-center text-gray-600">
-        <h2 className="text-3xl font-bold mb-4">Your cart is empty</h2>
-        <p className="text-md">Add some delicious dishes to your cart.</p>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-50 to-white text-green-700 px-6 py-20">
+        <h2 className="text-4xl font-bold mb-3">🛒 Cart is Empty</h2>
+        <p className="text-md text-green-600">Let’s add some deliciousness to it!</p>
       </div>
     );
   }
 
   return (
-    <main className="px-6 py-16 min-h-screen bg-gray-50">
+    <main className="min-h-screen mt-20 bg-gradient-to-br from-white to-green-50 px-6 py-16">
       <div className="max-w-5xl mx-auto">
-        <h1 className="text-3xl font-bold mb-8 text-gray-800">🛒 Your Cart</h1>
+        <h1 className="text-4xl font-extrabold text-green-800 mb-10 tracking-tight">
+          Your Cart
+        </h1>
 
         <div className="space-y-6">
           {cart.map((item) => (
             <div
               key={item.id}
-              className="flex items-center justify-between p-4 bg-white shadow rounded-2xl"
+              className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 p-5 bg-white border border-green-100 rounded-2xl shadow-md hover:shadow-lg transition duration-200"
             >
               <div className="flex items-center gap-4">
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-20 h-20 object-cover rounded-xl"
+                  className="w-20 h-20 object-cover rounded-xl border border-green-200 shadow-sm"
                 />
                 <div>
-                  <h2 className="font-semibold text-lg text-gray-800">
-                    {item.name}
-                  </h2>
-                  <p className="text-sm text-gray-500">${item.price} × {item.quantity}</p>
+                  <h2 className="text-lg font-semibold text-green-900">{item.name}</h2>
+                  <p className="text-sm text-green-600">
+                    ${item.price.toFixed(2)} × {item.quantity}
+                  </p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-2 sm:gap-4">
                 <button
                   onClick={() => updateQuantity(item.id, -1)}
-                  className="text-gray-600 hover:text-red-500"
+                  className="bg-yellow-100 hover:bg-yellow-200 text-yellow-800 p-2 rounded-full transition"
+                  title="Decrease"
                 >
                   <FaMinus />
                 </button>
-                <span className="font-semibold">{item.quantity}</span>
+                <span className="text-lg font-bold text-green-800">{item.quantity}</span>
                 <button
                   onClick={() => updateQuantity(item.id, 1)}
-                  className="text-gray-600 hover:text-green-500"
+                  className="bg-green-100 hover:bg-green-200 text-green-800 p-2 rounded-full transition"
+                  title="Increase"
                 >
                   <FaPlus />
                 </button>
-
                 <button
                   onClick={() => removeItem(item.id)}
-                  className="text-red-600 hover:text-red-800 ml-4"
+                  className="ml-2 text-red-500 hover:text-red-700 transition"
+                  title="Remove"
                 >
                   <FaTrash />
                 </button>
@@ -68,15 +72,16 @@ export default function CartPage() {
             </div>
           ))}
         </div>
-        <div className="mt-10 text-right">
-          <p className="text-xl font-semibold text-gray-700 mb-4">
-            Total: ${total.toFixed(2)}
+
+        <div className="mt-12 bg-white border border-green-100 p-6 rounded-2xl shadow-lg flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <p className="text-2xl font-bold text-green-900 mb-4 sm:mb-0">
+            Total: <span className="text-yellow-600">${total.toFixed(2)}</span>
           </p>
           <button
             onClick={() => navigate("/checkout")}
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full text-sm font-semibold transition"
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3 rounded-full shadow-md transition"
           >
-            Proceed to Checkout
+            ✅ Proceed to Checkout
           </button>
         </div>
       </div>
