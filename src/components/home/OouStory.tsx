@@ -19,8 +19,6 @@ export default function ServicesSection() {
             Explore
           </button>
         </div>
-
-        {/* Right - Services Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
           <ServiceCard
             icon={<Utensils className="text-green-700 w-6 h-6" />}

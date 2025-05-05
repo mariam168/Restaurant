@@ -10,7 +10,12 @@ import ProductDetails from './pages/ProductDetails';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/Checkout';
 import Sucess from './pages/SucessPage';
-
+import Chiefs from './pages/Chief';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import FavoritesPage from './pages/FaviouratesPage';
+import SignUp from './pages/SignUp';
+import SignIn from './pages/SignIn';
 const App: React.FC = () => {
   return (
 
@@ -25,6 +30,12 @@ const App: React.FC = () => {
             <Route path="/cart" element={<CartPage />} />
             <Route path="/checkout" element={<Checkout />} />
             <Route path="/success" element={<Sucess />} />
+            <Route path="/chefs" element={<Chiefs />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/favorites" element={<FavoritesPage />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signin" element={<SignIn />} />
           </Routes>
         </main>
         <Footer />

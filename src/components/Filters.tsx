@@ -53,11 +53,10 @@ export const Filters: React.FC<FiltersProps> = ({
             <button
               key={cat}
               onClick={() => setSelectedCategory(cat)}
-              className={`px-3 py-1 rounded-full text-sm font-medium border transition ${
-                selectedCategory === cat
+              className={`px-3 py-1 rounded-full text-sm font-medium border transition ${selectedCategory === cat
                   ? "bg-green-600 text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-green-100"
-              }`}
+                }`}
             >
               {cat}
             </button>
@@ -74,11 +73,10 @@ export const Filters: React.FC<FiltersProps> = ({
             <button
               key={range}
               onClick={() => setPriceRange(range)}
-              className={`px-3 py-1 rounded-full text-sm font-medium border transition ${
-                priceRange === range
+              className={`px-3 py-1 rounded-full text-sm font-medium border transition ${priceRange === range
                   ? "bg-green-600 text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-green-100"
-              }`}
+                }`}
             >
               {range}
             </button>
@@ -112,11 +110,10 @@ export const Filters: React.FC<FiltersProps> = ({
             <button
               key={type}
               onClick={() => setSelectedType(type)}
-              className={`px-3 py-1 rounded-full text-sm font-medium border transition ${
-                selectedType === type
+              className={`px-3 py-1 rounded-full text-sm font-medium border transition ${selectedType === type
                   ? "bg-green-600 text-white"
                   : "bg-gray-100 text-gray-700 hover:bg-green-100"
-              }`}
+                }`}
             >
               {type}
             </button>

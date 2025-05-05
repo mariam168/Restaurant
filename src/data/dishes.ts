@@ -1,4 +1,3 @@
-// src/data/dishes.ts
 export type Dish = {
   id: number;
   name: string;
@@ -23,7 +22,6 @@ export type Dish = {
   packaging: string;
   delivery: string;
 };
-import { i } from "framer-motion/client";
 import dish1 from "../assets/images/food1.jpg";
 import dish2 from "../assets/images/food2.png";
 import dish3 from "../assets/images/food3.jpg";
@@ -36,7 +34,7 @@ export const allDishes: Dish[] = [
       "A healthy mix of grilled chicken, fresh greens, cherry tomatoes, cucumbers, and vinaigrette dressing.",
     image: dish1,
     gallery: [
-     
+
       dish2,
       dish3,
       dish4,
@@ -95,7 +93,7 @@ export const allDishes: Dish[] = [
     },
     packaging: "Biodegradable bowl with secure lid.",
     delivery: "Delivered fresh and warm in under 30 minutes.",
-    
+
   },
-  
+
 ];

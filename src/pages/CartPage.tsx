@@ -1,4 +1,3 @@
-import React from "react";
 import { useCart } from "../context/CartContext";
 import { FaTrash, FaPlus, FaMinus } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";

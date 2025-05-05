@@ -1,4 +1,4 @@
-import React, { useState, useEffect, JSX } from "react";
+import { useState, useEffect, JSX } from "react";
 import dish1 from "../../assets/images/food1.jpg";
 import dish2 from "../../assets/images/food3.jpg";
 import dish3 from "../../assets/images/food4.jpg";
@@ -83,20 +83,11 @@ export default function HeroSection(): JSX.Element {
   0%   { transform: rotate(-10deg); }
   30%  { transform: rotate(110deg); animation-timing-function: ease-in; }
   60%  { transform: rotate(13=10deg); animation-timing-function: ease-out; }
-
-  /* نثبت عند 130deg من 60% إلى 80% */
   70%  { transform: rotate(110deg); }
   80%  { transform: rotate(110deg); }
-
-  /* توقف عند 300deg من 80% إلى 100% */
   90%  { transform: rotate(110deg); }
-
-  /* نكمل الحركة بعد التوقف */
   100% { transform: rotate(220deg); }
 }
-
-
-
       @keyframes fadeDish {
   0% { opacity: 0; }
   10% { opacity: 1; }
@@ -168,7 +159,7 @@ rgba(114, 124, 109, 0.16)
         }
       `}</style>
 
-      <section className="w-full h-full pt-16 bg-gradient-to-br from-[#f5f5f5] via-[#eeeeee] to-[#e0e0e0] min-h-[70vh] py-16 px-6 relative overflow-hidden ">
+      <section className="w-full h-full pt-16 bg-gradient-to-br from-[#f5f5f5] via-[#eeeeee] to-[#e0e0e0]  min-h-[70vh] py-16 px-6 relative overflow-hidden ">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
           <div className="flex justify-center overflow-hidden relative min-h-[660px]">
             <div className="background-circle" />

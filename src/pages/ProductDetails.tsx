@@ -17,7 +17,7 @@ import { useCart } from "../context/CartContext";
 export default function DishDetailsPage() {
   const { id } = useParams<{ id: string }>();
   const { addToCart } = useCart();
-  const [added, setAdded] = useState(false); 
+  const [added, setAdded] = useState(false);
 
   const dish = allDishes.find((d) => d.id.toString() === id);
 
@@ -63,7 +63,7 @@ export default function DishDetailsPage() {
     <main className="px-6 py-20 mt-16 bg-white min-h-screen">
       <div className="max-w-7xl mx-auto space-y-4 mt-16">
         <div className="flex flex-col md:flex-row gap-10">
- 
+
           <div className="md:w-1/2">
             <img
               src={dish.image}
@@ -133,70 +133,67 @@ export default function DishDetailsPage() {
             </button>
           </div>
         </div>
-       {/* Origin Section */}
-<div className="bg-gradient-to-r from-green-50 to-white p-5 rounded-2xl shadow-sm border border-green-100 flex items-start gap-4 mb-6">
-  <div className="text-3xl text-green-600">🌍</div>
-  <div>
-    <h3 className="text-lg font-bold text-green-800 mb-1">Origin</h3>
-    <p className="text-sm text-gray-700 italic">{dish.origin}</p>
-  </div>
-</div>
+        <div className="bg-gradient-to-r from-green-50 to-white p-5 rounded-2xl shadow-sm border border-green-100 flex items-start gap-4 mb-6">
+          <div className="text-3xl text-green-600">🌍</div>
+          <div>
+            <h3 className="text-lg font-bold text-green-800 mb-1">Origin</h3>
+            <p className="text-sm text-gray-700 italic">{dish.origin}</p>
+          </div>
+        </div>
+        <div className="mb-6">
+          <h3 className="text-xl font-bold mb-4 text-green-800">Nutrition Facts</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {[
+              { icon: '🍗', label: 'Protein', value: `${dish.nutrition.protein}g` },
+              { icon: '🥔', label: 'Carbs', value: `${dish.nutrition.carbs}g` },
+              { icon: '🧈', label: 'Fats', value: `${dish.nutrition.fat}g` },
+              { icon: '🧂', label: 'Sodium', value: `${dish.nutrition.sodium}mg` },
+            ].map((item, index) => (
+              <div key={index} className="bg-yellow-50 p-4 rounded-xl shadow-sm text-center border border-yellow-100">
+                <div className="text-2xl text-green-600">{item.icon}</div>
+                <p className="font-semibold text-green-800 mt-1">{item.label}</p>
+                <p className="text-sm text-gray-700">{item.value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-2xl shadow-sm relative mb-6">
+          <div className="absolute top-4 right-4 text-3xl text-yellow-300">👨‍🍳</div>
+          <h3 className="text-xl font-bold text-green-800 mb-2">Chef’s Tips</h3>
+          <p className="text-gray-700 italic leading-relaxed">“{dish.chefTips}”</p>
+        </div>
 
-{/* Nutrition Facts */}
-<div className="mb-6">
-  <h3 className="text-xl font-bold mb-4 text-green-800">Nutrition Facts</h3>
-  <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-    {[
-      { icon: '🍗', label: 'Protein', value: `${dish.nutrition.protein}g` },
-      { icon: '🥔', label: 'Carbs', value: `${dish.nutrition.carbs}g` },
-      { icon: '🧈', label: 'Fats', value: `${dish.nutrition.fat}g` },
-      { icon: '🧂', label: 'Sodium', value: `${dish.nutrition.sodium}mg` },
-    ].map((item, index) => (
-      <div key={index} className="bg-yellow-50 p-4 rounded-xl shadow-sm text-center border border-yellow-100">
-        <div className="text-2xl text-green-600">{item.icon}</div>
-        <p className="font-semibold text-green-800 mt-1">{item.label}</p>
-        <p className="text-sm text-gray-700">{item.value}</p>
-      </div>
-    ))}
-  </div>
-</div>
-<div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-2xl shadow-sm relative mb-6">
-  <div className="absolute top-4 right-4 text-3xl text-yellow-300">👨‍🍳</div>
-  <h3 className="text-xl font-bold text-green-800 mb-2">Chef’s Tips</h3>
-  <p className="text-gray-700 italic leading-relaxed">“{dish.chefTips}”</p>
-</div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
 
-<div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-  <div className="bg-green-50 border border-green-200 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
-    <FaBoxOpen className="text-3xl text-green-600 mt-1" />
-    <div>
-      <h4 className="text-lg font-semibold text-green-800 mb-1">Packaging</h4>
-      <p className="text-sm text-gray-700 leading-relaxed">{dish.packaging}</p>
-    </div>
-  </div>
-  <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
-    <FaTruck className="text-3xl text-yellow-600 mt-1" />
-    <div>
-      <h4 className="text-lg font-semibold text-green-800 mb-1">Delivery</h4>
-      <p className="text-sm text-gray-700 leading-relaxed">{dish.delivery}</p>
-    </div>
-  </div>
-</div>
+          <div className="bg-green-50 border border-green-200 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
+            <FaBoxOpen className="text-3xl text-green-600 mt-1" />
+            <div>
+              <h4 className="text-lg font-semibold text-green-800 mb-1">Packaging</h4>
+              <p className="text-sm text-gray-700 leading-relaxed">{dish.packaging}</p>
+            </div>
+          </div>
+          <div className="bg-yellow-50 border border-yellow-200 p-6 rounded-2xl shadow-md flex items-start gap-4 hover:shadow-lg transition">
+            <FaTruck className="text-3xl text-yellow-600 mt-1" />
+            <div>
+              <h4 className="text-lg font-semibold text-green-800 mb-1">Delivery</h4>
+              <p className="text-sm text-gray-700 leading-relaxed">{dish.delivery}</p>
+            </div>
+          </div>
+        </div>
 
         <div>
-  <h3 className="text-xl font-semibold text-gray-800 mb-4">Customer Reviews</h3>
-  <div className="space-y-4">
-    <div className="bg-white border-l-4 border-green-500 p-4 rounded-md shadow-sm">
-      <p className="text-gray-700 italic">“Absolutely delicious! Will order again.”</p>
-      <p className="text-sm text-gray-500 mt-1 text-right">– Sarah A.</p>
-    </div>
-    <div className="bg-white border-l-4 border-green-500 p-4 rounded-md shadow-sm">
-      <p className="text-gray-700 italic">“Perfect spice level and portion size.”</p>
-      <p className="text-sm text-gray-500 mt-1 text-right">– Ahmed M.</p>
-    </div>
-  </div>
-</div>
+          <h3 className="text-xl font-semibold text-gray-800 mb-4">Customer Reviews</h3>
+          <div className="space-y-4">
+            <div className="bg-white border-l-4 border-green-500 p-4 rounded-md shadow-sm">
+              <p className="text-gray-700 italic">“Absolutely delicious! Will order again.”</p>
+              <p className="text-sm text-gray-500 mt-1 text-right">– Sarah A.</p>
+            </div>
+            <div className="bg-white border-l-4 border-green-500 p-4 rounded-md shadow-sm">
+              <p className="text-gray-700 italic">“Perfect spice level and portion size.”</p>
+              <p className="text-sm text-gray-500 mt-1 text-right">– Ahmed M.</p>
+            </div>
+          </div>
+        </div>
 
         <div>
           <h3 className="text-xl font-semibold text-gray-800 mb-4">You Might Also Like</h3>
