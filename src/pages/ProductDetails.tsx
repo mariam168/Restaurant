@@ -12,7 +12,7 @@ export default function DishDetailsPage() {
 
   if (!dish) {
     return (
-      <section className="px-6 py-16 min-h-screen flex items-center justify-center">
+      <section className="px-6 py-16 min-h-screen mt-16 flex items-center justify-center">
         <div className="text-center text-gray-600">
           <h2 className="text-3xl font-bold mb-4">Dish Not Found</h2>
           <p className="mb-6">The dish you're looking for doesn't exist.</p>
