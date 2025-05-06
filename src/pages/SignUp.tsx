@@ -18,7 +18,6 @@ export default function SignUp() {
         </h2>
 
         <form className="space-y-5">
-          {/* Full Name */}
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Full Name
@@ -30,7 +29,6 @@ export default function SignUp() {
             />
           </div>
 
-          {/* Email */}
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Email
@@ -41,8 +39,6 @@ export default function SignUp() {
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 text-gray-800 dark:text-white focus:ring-2 focus:ring-yellow-500 dark:focus:ring-yellow-400 focus:outline-none"
             />
           </div>
-
-          {/* Password */}
           <div>
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Password
@@ -53,8 +49,6 @@ export default function SignUp() {
               className="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-neutral-600 bg-white dark:bg-neutral-900 text-gray-800 dark:text-white focus:ring-2 focus:ring-yellow-500 dark:focus:ring-yellow-400 focus:outline-none"
             />
           </div>
-
-          {/* Terms and Conditions */}
           <div className="flex items-center text-sm">
             <input
               type="checkbox"
@@ -67,8 +61,6 @@ export default function SignUp() {
               I agree to the <span className="text-yellow-600 dark:text-yellow-400 font-medium cursor-pointer">Terms & Conditions</span>
             </label>
           </div>
-
-          {/* Submit Button */}
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
@@ -82,15 +74,11 @@ export default function SignUp() {
           >
             Sign Up
           </motion.button>
-
-          {/* Divider */}
           <div className="flex items-center my-4">
             <div className="flex-grow h-px bg-gray-300 dark:bg-neutral-600" />
             <span className="mx-4 text-gray-400 text-sm">OR</span>
             <div className="flex-grow h-px bg-gray-300 dark:bg-neutral-600" />
           </div>
-
-          {/* Google Button */}
           <button
             type="button"
             className="w-full border border-gray-300 dark:border-neutral-600 py-2 rounded-lg flex items-center justify-center gap-3 hover:bg-gray-50 dark:hover:bg-neutral-700 transition"
@@ -105,8 +93,6 @@ export default function SignUp() {
             </span>
           </button>
         </form>
-
-        {/* Footer */}
         <p className="mt-6 text-center text-sm text-gray-600 dark:text-gray-400">
           Already have an account?{" "}
           <Link to="/signin" className="text-yellow-700 dark:text-yellow-400 font-semibold hover:underline">

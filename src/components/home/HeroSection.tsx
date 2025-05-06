@@ -79,24 +79,19 @@ export default function HeroSection(): JSX.Element {
   return (
     <>
       <style>{`
-     @keyframes rotateDishContainer {
-  0%   { transform: rotate(-10deg); }
-  30%  { transform: rotate(110deg); animation-timing-function: ease-in; }
-  60%  { transform: rotate(13=10deg); animation-timing-function: ease-out; }
-  70%  { transform: rotate(110deg); }
-  80%  { transform: rotate(110deg); }
-  90%  { transform: rotate(110deg); }
-  100% { transform: rotate(220deg); }
-}
-      @keyframes fadeDish {
-  0% { opacity: 0; }
-  10% { opacity: 1; }
-  50% { opacity: 1; }
-  55% { opacity: 1; }
- 
-  100% { opacity: 0; }
-}
+        @keyframes rotateDishContainer {
+          0%   { transform: rotate(-10deg); }
+          30%  { transform: rotate(110deg); animation-timing-function: ease-in; }
+          60%  { transform: rotate(130deg); animation-timing-function: ease-out; }
+          100% { transform: rotate(220deg); }
+        }
 
+        @keyframes fadeDish {
+          0% { opacity: 0; }
+          10% { opacity: 1; }
+          90% { opacity: 1; }
+          100% { opacity: 0; }
+        }
 
         @keyframes fadeTextIn {
           0% { opacity: 0; transform: translateY(20px); }
@@ -110,8 +105,7 @@ export default function HeroSection(): JSX.Element {
           left: 280px;
           top: 160px;
           z-index: 10;
-         animation: rotateDishContainer 6s ease-in-out forwards;
-
+          animation: rotateDishContainer 6s ease-in-out forwards;
         }
 
         .dish-image-wrapper {
@@ -124,42 +118,40 @@ export default function HeroSection(): JSX.Element {
           animation: fadeDish 8s ease-in-out forwards;
         }
 
-      .background-circle {
-  position: absolute;
-  width: 900px;
-  height: 900px;
-  top: -350px;
-  left: -250px;
-  border-radius: 50%;
-  z-index: 0;
-  box-shadow: 0 0 80px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-}
+        .background-circle {
+          position: absolute;
+          width: 900px;
+          height: 900px;
+          top: -350px;
+          left: -250px;
+          border-radius: 50%;
+          z-index: 0;
+          box-shadow: 0 0 80px rgba(0, 0, 0, 0.08);
+          overflow: hidden;
+        }
 
-.background-circle::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  padding: 35px; /* سمك الـ border */
-  background: conic-gradient(
-    from 0deg,
-rgba(96, 102, 93, 0.45),
-rgba(202, 209, 193, 0.22),
-rgba(114, 124, 109, 0.16)
-  );
-  -webkit-mask: 
-    radial-gradient(farthest-side, transparent calc(100% - 35px), black 100%);
-  mask: 
-    radial-gradient(farthest-side, transparent calc(100% - 35px), black 100%);
-}
+        .background-circle::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          border-radius: 50%;
+          padding: 35px;
+          background: conic-gradient(
+            from 0deg,
+            rgba(96, 102, 93, 0.45),
+            rgba(202, 209, 193, 0.22),
+            rgba(114, 124, 109, 0.16)
+          );
+          -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 35px), black 100%);
+          mask: radial-gradient(farthest-side, transparent calc(100% - 35px), black 100%);
+        }
 
         .fade-text {
           animation: fadeTextIn 0.8s ease-out;
         }
       `}</style>
 
-      <section className="w-full h-full pt-16 bg-gradient-to-br from-[#f5f5f5] via-[#eeeeee] to-[#e0e0e0]  min-h-[70vh] py-16 px-6 relative overflow-hidden ">
+      <section className="w-full h-full pt-16 bg-gradient-to-br from-[#f5f5f5] via-[#eeeeee] to-[#e0e0e0] dark:from-neutral-900 dark:via-neutral-800 dark:to-neutral-900 min-h-[70vh] py-16 px-6 relative overflow-hidden transition-colors duration-300">
         <div className="mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 relative z-10">
           <div className="flex justify-center overflow-hidden relative min-h-[660px]">
             <div className="background-circle" />
@@ -168,7 +160,7 @@ rgba(114, 124, 109, 0.16)
                 <img
                   src={currentDish.image}
                   alt="Dish"
-                  className="w-full h-full object-cover rounded shadow-2xl border-4 border-white"
+                  className="w-full h-full object-cover rounded shadow-2xl border-4 border-white dark:border-neutral-700"
                 />
               </div>
             </div>
@@ -177,14 +169,14 @@ rgba(114, 124, 109, 0.16)
           <div className="space-y-6 my-auto pt-12 text-left relative z-10">
             {showText && (
               <>
-                <p className="text-xl text-gray-600 font-semibold fade-text">
+                <p className="text-xl text-gray-600 dark:text-gray-300 font-semibold fade-text">
                   {currentDish.description}
                 </p>
-                <h1 className="text-6xl font-bold leading-tight tracking-tight text-gray-800 fade-text">
+                <h1 className="text-6xl font-bold leading-tight tracking-tight text-gray-800 dark:text-white fade-text">
                   <span className="block text-7xl bg-gradient-to-r from-green-500 via-lime-400 to-green-700 text-transparent bg-clip-text">
                     {currentDish.title}
                   </span>
-                  <span className="block text-gray-700 mt-2 text-3xl">
+                  <span className="block mt-2 text-3xl text-gray-700 dark:text-gray-300">
                     {currentDish.subtitle}
                   </span>
                 </h1>
@@ -195,18 +187,19 @@ rgba(114, 124, 109, 0.16)
                     Play Video
                   </button>
 
-                  <button className="flex items-center gap-2 px-5 py-3 text-green-700 border-2 border-green-600 hover:bg-green-600 hover:text-white transition rounded-full shadow text-lg font-semibold">
+                  <button className="flex items-center gap-2 px-5 py-3 text-green-700 border-2 border-green-600 hover:bg-green-600 hover:text-white transition rounded-full shadow text-lg font-semibold dark:text-white dark:border-green-400 dark:hover:bg-green-400 dark:hover:text-neutral-900">
                     <ShoppingBag size={20} />
                     Order Food
                   </button>
                 </div>
               </>
             )}
+
             <div className="flex justify-start gap-4 pt-8">
               {dishes.map((dish, i) => (
                 <div
                   key={i}
-                  className={`p-2 rounded-xl backdrop-blur-md bg-white/30 shadow-md transition-all duration-300 ${
+                  className={`p-2 rounded-xl backdrop-blur-md bg-white/30 dark:bg-white/10 shadow-md transition-all duration-300 ${
                     currentIndex === i ? "ring-4 ring-green-500 ring-offset-2 scale-110" : ""
                   }`}
                 >
@@ -224,10 +217,9 @@ rgba(114, 124, 109, 0.16)
               ))}
             </div>
 
-
-            <div className="flex gap-6 items-center  pt-10 ">
+            <div className="flex gap-6 items-center pt-10">
               {[
-                { icon: <Utensils size={24} className="text-green-600" />, label: "Food" },
+                { icon: <Utensils size={24} className="text-green-600 dark:text-green-400" />, label: "Food" },
                 { icon: <Martini size={24} className="text-pink-500" />, label: "Drinks" },
                 { icon: <MessageCircle size={24} className="text-blue-500" />, label: "Chat" },
                 { icon: <User size={24} className="text-purple-500" />, label: "Profile" },
@@ -235,13 +227,12 @@ rgba(114, 124, 109, 0.16)
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="w-14 h-14 flex items-center justify-center rounded-2xl backdrop-blur-md bg-white/20 shadow-md border border-white/30 hover:scale-110 transition-all cursor-pointer"
+                  className="w-14 h-14 flex items-center justify-center rounded-2xl backdrop-blur-md bg-white/20 dark:bg-white/10 shadow-md border border-white/30 hover:scale-110 transition-all cursor-pointer"
                 >
                   {item.icon}
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </section>

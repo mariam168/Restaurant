@@ -27,8 +27,7 @@ export const DishCard: React.FC<{ dish: Dish }> = ({ dish }) => {
   };
 
   return (
-    <div className="bg-white rounded-3xl shadow-lg hover:shadow-xl transition duration-300 p-5 group hover:scale-105 relative">
-      {/* ❤️ Favorite icon top right */}
+    <div className="w-full max-w-md bg-white dark:bg-neutral-800 shadow-2xl rounded-3xl p-8 sm:p-10 border border-gray-200 dark:border-neutral-700 group hover:scale-105 relative transition duration-300">
       <button
         onClick={toggleFavorite}
         className="absolute top-3 right-3 text-red-500 hover:scale-110 transition"
@@ -37,7 +36,7 @@ export const DishCard: React.FC<{ dish: Dish }> = ({ dish }) => {
         {isFavorite ? <FaHeart /> : <FaRegHeart />}
       </button>
 
-      <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-green-100 shadow-md mb-5">
+      <div className="w-28 h-28 mx-auto rounded-full overflow-hidden border-4 border-green-100 dark:border-green-500 shadow-md mb-5">
         <img
           src={dish.image}
           alt={dish.name}
@@ -45,14 +44,16 @@ export const DishCard: React.FC<{ dish: Dish }> = ({ dish }) => {
         />
       </div>
 
-      <h3 className="text-xl font-bold text-center text-gray-800 group-hover:text-green-600 transition">
+      <h3 className="text-xl font-bold text-center text-gray-800 dark:text-white group-hover:text-green-600 transition">
         {dish.name}
       </h3>
-      <p className="text-gray-500 mt-2 text-center text-sm line-clamp-2">
+      <p className="text-gray-500 dark:text-gray-400 mt-2 text-center text-sm line-clamp-2">
         {dish.description}
       </p>
-      <div className="flex justify-between items-center mt-4 text-sm text-gray-700 px-2">
-        <span className="font-semibold text-green-700">{dish.price} EGP</span>
+      <div className="flex justify-between items-center mt-4 text-sm text-gray-700 dark:text-gray-300 px-2">
+        <span className="font-semibold text-green-700 dark:text-green-400">
+          {dish.price} EGP
+        </span>
         <span className="flex items-center gap-1 text-yellow-500 font-medium">
           <FaStar className="text-xs" />
           {dish.rating}

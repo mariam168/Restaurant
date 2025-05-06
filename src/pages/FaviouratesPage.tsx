@@ -7,21 +7,27 @@ export default function FavoritesPage() {
 
   if (favoriteDishes.length === 0) {
     return (
-      <div className="min-h-screen flex items-center justify-center text-gray-600 px-4 py-20">
-        <h2 className="text-xl font-semibold text-center">
-          You haven’t added any favorites yet.
+      <div className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-20 bg-white dark:bg-neutral-900">
+    
+        <div className="text-6xl mb-6">💔</div>
+        <h2 className="text-2xl font-bold text-gray-700 dark:text-gray-300 mb-2">
+          No Favorites Yet
         </h2>
+        <p className="text-gray-500 dark:text-gray-400">
+          Browse dishes and tap the ❤️ icon to save your favorites.
+        </p>
       </div>
     );
   }
 
   return (
-    <div className="px-6 py-16 max-w-6xl mx-auto min-h-screen">
-      <div className="flex items-center justify-between mb-10">
-        <h1 className="text-3xl font-bold text-green-700">
+    <div className="bg-white dark:bg-neutral-900">
+    <div className="px-6 py-20 max-w-7xl mx-auto min-h-screen bg-white dark:bg-neutral-900">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
+        <h1 className="text-3xl font-extrabold text-green-700 dark:text-yellow-300">
           ❤️ Your Favorite Dishes
         </h1>
-        <span className="bg-green-100 text-green-800 font-semibold px-4 py-1 rounded-full text-sm shadow">
+        <span className="bg-green-100 dark:bg-neutral-700 text-green-800 dark:text-yellow-300 font-semibold px-4 py-1 rounded-full text-sm shadow-sm">
           {favoriteDishes.length} item{favoriteDishes.length !== 1 ? "s" : ""}
         </span>
       </div>
@@ -31,6 +37,7 @@ export default function FavoritesPage() {
           <DishCard key={dish.id} dish={dish} />
         ))}
       </div>
+    </div>
     </div>
   );
 }
