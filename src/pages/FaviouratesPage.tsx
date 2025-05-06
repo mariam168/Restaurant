@@ -21,7 +21,7 @@ export default function FavoritesPage() {
   }
 
   return (
-    <div className="bg-white dark:bg-neutral-900">
+    <div className="bg-white  dark:bg-neutral-900">
     <div className="px-6 py-20 max-w-7xl mx-auto min-h-screen bg-white dark:bg-neutral-900">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-10">
         <h1 className="text-3xl font-extrabold text-green-700 dark:text-yellow-300">
