@@ -27,7 +27,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="absolute top-0 left-0 right-0 z-50 py-4 px-4 md:px-8 lg:px-16 bg-white dark:bg-gray-900 shadow-md transition">
+    <header className="absolute top-0 mb-16 left-0 right-0 z-50 py-4 px-4 md:px-8 lg:px-16 bg-white dark:bg-black shadow-md transition">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -122,7 +122,7 @@ const Header: React.FC = () => {
 
           <Link
             to="/signin"
-            className="block text-gray-800 dark:text-white font-semibold hover:text-green-600"
+            className="block bg:green text-gray-800 dark:text-white font-semibold hover:text-green-600"
           >
             Sign In
           </Link>
